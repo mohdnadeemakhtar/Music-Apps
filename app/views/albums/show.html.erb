@@ -1,0 +1,36 @@
+
+<div class="accordian">
+  <div id="accordion" >
+
+      <h3><%= @album.title %></h3>
+      <div>
+        <table >
+          <tr>
+          <p>
+          <td>
+            <h3>Reviews: </h3>
+          </td>
+          <td>
+            <h5><%= @album.review %></h5>
+          </td>
+          </p>
+          </tr>
+
+          <tr class="accordian_button">
+            <td align="left">
+              <p>
+              <%= link_to 'Back', albums_path %>
+              </p>
+            </td>
+            <td align="centre" >
+              <p>
+                <%= link_to 'Edit', edit_album_path(@album), :style=>"color:#FFA500;" %>
+              </p>
+            </td>
+
+          </tr>
+        </table>
+
+      </div>
+  </div>
+</div>

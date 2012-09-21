@@ -1,0 +1,97 @@
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #DBEFFF;
+}
+
+.headerAlbum{
+position: relative;
+left:500px;
+
+}
+
+
+.editor_link {
+    text-decoration: none;
+    color: black;
+    font-size: 11pt;
+    
+}
+
+.editor_link:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+    font-size: 11pt;
+}
+
+
+
+.accordian{
+    margin-top: 40px;
+    position:absolute;
+    right:60px;
+    left: 450px;
+
+    width:430px;
+    background-color:#b0e0e6;
+}
+
+.accordian_button{
+
+    color: #000000;
+    text-decoration: inherit;
+    font-size: 105%;
+    font-weight: bold;
+    padding: 20px;
+
+}
+.mb_menu{
+    position:absolute;
+
+    top:10px;
+    right:0px;
+    left: 900px;
+    z-index:11;
+    height: 60px;
+}
+
+
+
+.mb_menu a{
+	background-color:#000000;
+
+	display:block;
+	width:200px;
+	height:50px;
+	color:#fff;
+	line-height:40px;
+	text-align:center;
+	text-transform:uppercase;
+	outline:none;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition:all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-transition: all 0.2s ease-in;
+}
+.mb_menu a:hover{
+	color:#000;
+	background-color:#fff;
+}
+.mb_content_wrapper{
+	background:transparent url(../images/bg_menu.png) repeat top left;
+	width:400px;
+	height:400px;
+	position:absolute;
+	top:154px;
+	left:200px;
+	z-index:4;
+	display:none;
+}
+
+.round{
+   -webkit-border-radius: 5pt;
+    -moz-border-radius: 5pt;
+    border-radius:5 pt;
+
+}

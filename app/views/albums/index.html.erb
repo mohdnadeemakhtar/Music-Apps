@@ -1,0 +1,53 @@
+
+
+<div class="headerAlbum" ><h1>Music Records</h1></div>
+
+<div id="mb_menu" class="mb_menu">
+  <a href="/albums/new" class="album_button round" data-speed="1000" data-easing="easeInExpo">New Album</a>
+</div>
+
+<%= link_to "Logout", logout_path, :class => 'editor_link'  %> <br />
+
+<div class="accordian">
+  <div id="accordion" >
+    <% @albums.each do |album| %>
+      <h3><a href="#"><%= album.title %></a></h3>
+      <div>
+        <table >
+          <tr>
+          <p>
+          <td>
+            <h3>Reviews: </h3>
+          </td>
+          <td>
+            <h5><%= album.review %></h5>
+          </td>
+          </p>
+          </tr>
+
+          <tr class="accordian_button">
+            <td align="left">
+              <p>
+                <%= link_to 'Show', album , :style=>"color:#0000A0;" %>
+              </p>
+            </td>
+            <td align="centre" >
+              <p>
+                <%= link_to 'Edit', edit_album_path(album), :style=>"color:#FFA500;" %>
+              </p>
+            </td>
+            <td align="right" >
+              <p>
+                <%= link_to 'Destroy', album,:id =>album.id , :confirm => 'Are you sure?', :method => :delete , :style=>"color:#800000;" %>
+              </p>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+
+    <% end %>
+
+  </div>
+</div>
+

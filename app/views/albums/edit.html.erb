@@ -1,0 +1,27 @@
+
+<div class="accordian">
+  <div id="accordion" >
+
+      <h3>Edit Album</h3>
+      <div>
+        <table >
+          <%= render 'form' %>
+
+          <tr class="accordian_button">
+            <td align="left">
+              <p>
+              <%= link_to 'Back', albums_path %>
+              </p>
+            </td>
+            <td align="right">
+              <p>
+              <%= link_to 'Show', @album %>
+              </p>
+            </td>
+
+          </tr>
+        </table>
+
+      </div>
+  </div>
+</div>
